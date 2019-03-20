@@ -1,0 +1,20 @@
+{
+  "name": "bitcast",
+  "version": "0.1.0",
+  "description": "Instantly record and share screencasts.",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn build:lib && node .",
+    "build:lib": "tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^11.11.3",
+    "tslint": "^5.14.0",
+    "tslint-config-airbnb": "^5.11.1",
+    "typescript": "^3.3.3333"
+  },
+  "dependencies": {
+    "systray": "^1.0.5"
+  }
+}
