@@ -1,12 +1,13 @@
-import { initializeTray } from './tray';
 import gui from 'gui';
-import { cropper } from './cropper';
+import Tray from './view/Tray';
+import Cropper from './view/Cropper';
 
 async function main() {
-  initializeTray();
-  cropper();
+  new Tray();
+  new Cropper().init();
 }
-main().catch(console.error);
+main()
+  .catch(console.error);
 
 gui.MessageLoop.run();
 process.exit(0);
