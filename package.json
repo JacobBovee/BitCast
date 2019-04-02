@@ -15,9 +15,19 @@
     "typescript": "^3.3.3333"
   },
   "dependencies": {
-    "forked-systray": "^3.0.11",
     "gui": "^0.6.3",
-    "libui-node": "^0.2.1",
+    "iohook": "^0.4.2",
     "screen-info": "^1.0.1"
+  },
+  "iohook": {
+    "targets": [
+      "node-67"
+    ],
+    "platforms": [
+      "darwin"
+    ],
+    "arches": [
+      "x64"
+    ]
   }
 }
